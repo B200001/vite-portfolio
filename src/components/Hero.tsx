@@ -10,7 +10,12 @@ const Hero: React.FC = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        height: '100vh',
+        height: {
+          xs: '50vh'
+        },
+        p:{
+          xs: '5px'
+        },
         textAlign: 'center',
         color: 'text.primary',
         background: 'background.paper', // optional background

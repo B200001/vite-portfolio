@@ -11,6 +11,10 @@ const About: React.FC = () => {
         py: 10,
         backgroundColor: theme.palette.background.paper,
         color: theme.palette.text.primary,
+        m: "10px",
+        borderRadius: {
+          xs: "30px"
+        }
       }}
     >
       <Container maxWidth="md">

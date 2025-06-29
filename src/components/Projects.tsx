@@ -16,7 +16,6 @@ const Projects: React.FC = () => {
 
   return (
     <Box
-      id="projects"
       sx={{
         py: 10,
         backgroundColor: theme.palette.background.default,
@@ -45,22 +44,27 @@ const Projects: React.FC = () => {
       <Box
         sx={{
           display: 'flex',
-          // gap: 4,
-          px: 15,
-          paddingLeft: "17em",
+          gap: 4,
+          px: { xs: 4, sm: 4, md: 8, lg: 12 },
           overflowX: 'auto',
           scrollSnapType: 'x mandatory',
           '&::-webkit-scrollbar': { display: 'none' },
           width: '100%',
-          justifyContent: 'center',
+          justifyContent: {
+            xs: 'center',
+            sm: 'flex-start'
+          },
         }}
       >
         {projects.map((project, index) => (
           <Box
             key={index}
             sx={{
-              
-              flex: '0 0 calc(50% - 2rem)', // Show 2 items
+              flex: {
+                xs: '0 0 100%',        // Mobile: full width
+                sm: '0 0 80%',         // Small tablets
+                md: '0 0 50%',         // Tablets and up: two at a time
+              },
               scrollSnapAlign: 'start',
               display: 'flex',
               justifyContent: 'center',
@@ -120,6 +124,7 @@ const Projects: React.FC = () => {
         ))}
       </Box>
     </Box>
+
   );
 };
 
