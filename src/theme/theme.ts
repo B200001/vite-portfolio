@@ -24,6 +24,6 @@ export const getDesignTokens = (mode: PaletteMode) => ({
         }),
   },
   typography: {
-    fontFamily: `'Your Font Name', sans-serif`, // ✅ Replace with your actual font
+    fontFamily: `font-family: "Poppins", sans-serif`, 
   },
 });
