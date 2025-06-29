@@ -1,0 +1,52 @@
+// Variables for consistency
+$primary-color: #4a90e2;
+$secondary-color: #f5f5f5;
+$text-color: #333;
+$background-color: #fff;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  background-color: $secondary-color;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+
+  &:hover {
+    // color: darken($primary-color, 10%);
+  }
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  background-color: $primary-color;
+  color: $background-color;
+  transition: background-color 0.3s;
+
+  &:hover {
+    // background-color: darken($primary-color, 10%);
+  }
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 6rem 4rem;
+  }
+}
